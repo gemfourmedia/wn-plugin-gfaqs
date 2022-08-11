@@ -1,0 +1,6 @@
+scopes:
+    featured:
+        label: Only published
+        type: checkbox
+        default: 0
+        conditions: featured <> false

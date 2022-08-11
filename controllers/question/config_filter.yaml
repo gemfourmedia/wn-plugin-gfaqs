@@ -1,0 +1,16 @@
+scopes:
+    category:
+        label: Categories
+        modelClass: GemFourMedia\GFAQs\Models\Category
+        conditions: category_id in (:filtered)
+        nameFrom: name
+    published:
+        label: Only published
+        type: checkbox
+        default: 0
+        conditions: published <> false
+    featured:
+        label: Only featured
+        type: checkbox
+        default: 0
+        conditions: featured <> false

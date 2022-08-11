@@ -1,0 +1,52 @@
+fields:
+    name:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.name'
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.slug'
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+    desc:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.desc'
+        size: ''
+        span: full
+        type: richeditor
+    featured:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.featured'
+        span: auto
+        type: switch
+    image:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.image'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+tabs:
+    fields:
+        meta_title:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_title'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: text
+        meta_description:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_description'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: textarea
+            size: small
+        meta_keywords:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_keywords'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: text

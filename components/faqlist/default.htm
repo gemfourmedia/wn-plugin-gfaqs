@@ -1,0 +1,30 @@
+{% set questions = __SELF__.questions %}
+
+<div class="faqList faqList-{{__SELF__}}" id="{{__SELF__}}">
+	<div class="faqList__body">
+		<div class="row">
+			{% for question in questions %}
+			<div class="col-12 col-md-6 col-lg-4 mb-4">
+				<div class="card">
+					<div class="card-header">
+						<h3 class="card-title">
+							{{question.question}}
+						</h3>
+					</div>
+					<div class="card-body">
+						{{question.answer_short|slice(0, 120)}}...
+					</div>
+					<a href="{{question.url}}" class="stretched-link"></a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="faqList__footer">
+		<div class="row">
+			<div class="col-12">
+				{{questions.render()|raw}}
+			</div>
+		</div>
+	</div>
+</div>

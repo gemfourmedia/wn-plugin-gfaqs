@@ -1,0 +1,7 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table gemfourmedia_gfaqs_question'
+    - builder_table_create_gemfourmedia_gfaqs_question.php
+    - 'Created table gemfourmedia_gfaqs_category'
+    - builder_table_create_gemfourmedia_gfaqs_category.php

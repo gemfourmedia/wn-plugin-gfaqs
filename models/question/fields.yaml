@@ -1,0 +1,63 @@
+fields:
+    published:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.published'
+        span: auto
+        default: 1
+        type: switch
+    featured:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.featured'
+        span: auto
+        type: switch
+    category:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.category_id'
+        nameFrom: name
+        descriptionFrom: description
+        emptyOption: 'Unset'
+        span: auto
+        type: relation
+    slug:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.slug'
+        span: auto
+        preset:
+            field: question
+            type: slug
+        type: text
+    question:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.question'
+        span: full
+        required: 1
+        type: text
+    answer:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.answer'
+        span: full
+        size: ''
+        type: richeditor
+    image:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.image'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+tabs:
+    fields:
+        meta_title:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_title'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: text
+        meta_description:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_description'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: textarea
+            size: small
+        meta_keywords:
+            label: 'gemfourmedia.gfaqs::lang.seo.meta_keywords'
+            tab: 'gemfourmedia.gfaqs::lang.seo.tab'
+            span: left
+            type: text

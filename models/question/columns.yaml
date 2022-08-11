@@ -1,0 +1,38 @@
+columns:
+    id:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.id'
+        type: number
+        sortable: true
+    question:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.question'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.published'
+        type: text
+        sortable: true
+    sort_order:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.sort_order'
+        type: number
+        sortable: true
+    category_id:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.category_id'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: category
+    featured:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.featured'
+        type: text
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gfaqs::lang.question.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true

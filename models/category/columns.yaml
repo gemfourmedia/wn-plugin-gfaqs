@@ -1,0 +1,27 @@
+columns:
+    id:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.id'
+        type: number
+        sortable: true
+    name:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    sort_order:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.sort_order'
+        type: number
+        sortable: true
+    featured:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.featured'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gfaqs::lang.category.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true

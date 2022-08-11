@@ -1,0 +1,10 @@
+name: Question
+form: $/gemfourmedia/gfaqs/models/question/fields.yaml
+modelClass: GemFourMedia\GFAQs\Models\Question
+defaultRedirect: gemfourmedia/gfaqs/question
+create:
+    redirect: 'gemfourmedia/gfaqs/question/update/:id'
+    redirectClose: gemfourmedia/gfaqs/question
+update:
+    redirect: gemfourmedia/gfaqs/question
+    redirectClose: gemfourmedia/gfaqs/question

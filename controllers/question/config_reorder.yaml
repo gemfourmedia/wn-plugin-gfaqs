@@ -1,0 +1,4 @@
+title: Question
+modelClass: GemFourMedia\GFAQs\Models\Question
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,26 @@
+{
+    "name": "gemfourmedia/wn-plugin-gfaqs",
+    "type": "winter-plugin",
+    "description": "FAQs for Winter CMS",
+    "homepage": "https://github.com/gemfourmedia/wn-plugin-gfaqs",
+    "keywords": ["winter cms", "winter", "plugin", "faqs"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sang Dang",
+            "email": "sangdang@gemfourmedia.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gemfourmedia/wn-plugin-gfaqs/issues",
+        "source": "https://github.com/gemfourmedia/wn-plugin-gfaqs"
+    },
+    "require": {
+        "php": "^7.2|^8.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "gfaqs"
+    }
+}

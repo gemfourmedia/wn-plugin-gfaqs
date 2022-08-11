@@ -1,0 +1,29 @@
+{% set item = __SELF__.item %}
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+	<div class="container">
+	    <ol class="breadcrumb row">
+	        <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+	        <li class="breadcrumb-item" aria-current="page"><a href="{{item.category.url}}">{{item.category.name}}</a></li>
+	        <li class="breadcrumb-item active" aria-current="page">{{this.page.title}}</li>
+	    </ol>
+	</div>
+</nav>
+
+<section class="section section__page faqDetail faqDetail-{{__SELF__}}" id="{{__SELF__}}">
+    <div class="container">
+        <div class="section__header section__header--left">
+            <h2 class="section__title text-primary">
+                {{item.question}}
+            </h2>
+            {{source('storage/app/media/icons/football-player.svg')}}
+        </div>
+        <div class="section__body">
+            <div class="row">
+                <div class="col-12">
+                {{item.answer|raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
