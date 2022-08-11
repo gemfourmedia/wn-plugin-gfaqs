@@ -1,0 +1,12 @@
+# Composer ignores
+/vendor
+composer.phar
+composer.lock
+
+.DS_Store
+
+# Editor ignores
+nbproject
+.idea
+.vscode
+_ide_helper.php
