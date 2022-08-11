@@ -14,7 +14,7 @@ class Plugin extends PluginBase
             'description' => 'gemfourmedia.gfaqs::lang.plugin.description',
             'author' => 'Gem Four Media',
             'icon' => 'oc-icon-question-circle',
-            'homepage' => 'https://gemfourmedia/wintercms/plugins/gfaqs'
+            'homepage' => 'https://gemfourmedia.com/wintercms/plugins-gfaqs'
         ];
     }
 

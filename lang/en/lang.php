@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'GFAQs',
+        'name' => 'FAQs',
         'description' => 'Frequently Asked Questions'
     ],
     'features' => [
